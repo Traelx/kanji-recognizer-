@@ -54,3 +54,5 @@ Due to license, redistribution is not allowed, download at the [ETL Character Da
 
 **Limited Kanji:** The model only recognizes 956 characters, and drawing a character outside that set will cause it to confidently predict the closest match.  
 
+This model is still heavily limited and will likely need future adjustments. However, it is still a useful tool to practise writing and memorizing kanji.
+
