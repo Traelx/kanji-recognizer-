@@ -47,12 +47,12 @@ uv run app.py
 **To retrain:** 
 Due to license, redistribution is not allowed, download at the [ETL Character Database](http://etlcdb.db.aist.go.jp/). Once files are in project folder, make sure to delete `model.pt` before running.
 
-
 ## Future Improvements Needed
-
-**Test accuracy measured on familiar handwriting:** Due to the nature of the dataset, nearly every writer appears in both training and test sets. Therefore, the 96.5% accuracy only reflects handwriting the model has seen. 
 
 **Limited Kanji:** The model only recognizes 956 characters, and drawing a character outside that set will cause it to confidently predict the closest match.  
 
 This model is still heavily limited and will likely need future adjustments. However, it is still a useful tool to practise writing and memorizing kanji.
 
+## Other Thoughts 
+
+**Writer overlap between train and test:** Due to the nature of the dataset, nearly every writer appears in both training and test sets. To check whether this inflated the accuracy score, a separate model was trained where data was split depending on the writers and not just at random. That model reached 97.3% accuracy, showing that the current model's accuracy does not depend on writer overlap.
