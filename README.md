@@ -35,7 +35,7 @@ Trained via Adam (learning rate 0.001), cross-entropy loss, and batch size 128.
 
 ## Run it yourself
 
-Requires [uv](https://docs.astral.sh/uv/).
+Requires [uv](https://docs.astral.sh/uv/)
 
 ```
 git clone https://github.com/Traelx/PyTorch_Test.git
@@ -45,4 +45,12 @@ uv run app.py
 ```
 
 **To retrain:** 
-Due to license, redistribution is not allowed, download at the [ETL Character Database](http://etlcdb.db.aist.go.jp/). Once files are in project folder, make sure to delete `model.pt` before running. 
+Due to license, redistribution is not allowed, download at the [ETL Character Database](http://etlcdb.db.aist.go.jp/). Once files are in project folder, make sure to delete `model.pt` before running.
+
+
+## Future Improvements Needed
+
+**Test accuracy measured on familiar handwriting:** Due to the nature of the dataset, nearly every writer appears in both training and test sets. Therefore, the 96.5% accuracy only reflects handwriting the model has seen. 
+
+**Limited Kanji:** The model only recognizes 956 characters, and drawing a character outside that set will cause it to confidently predict the closest match.  
+
