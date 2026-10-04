@@ -15,7 +15,7 @@ A convolutional neural network that recognizes handwritten Japanese characters c
 
 ## How it works
 
-**Dataset:** [ETL8B](http://etlcdb.db.aist.go.jp/) from AIST: about 154,000 handwritten samples from 160 writers, stored as 63×64 black-and-white images.
+**Dataset:** [ETL8B](http://etlcdb.db.aist.go.jp/) from AIST: about 154,000 handwritten samples from 1600 writers, stored as 63×64 black-and-white images.
 Parsing the binary files, the information is then split 80/20 train and test respectively. 
 
 **Model:**  CNN written in PyTorch:
