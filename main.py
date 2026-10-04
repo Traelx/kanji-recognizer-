@@ -80,7 +80,6 @@ if __name__ == '__main__':
     # reuse the saved model if exists
     if os.path.exists('model.pt'):
         model.load_state_dict(torch.load('model.pt', map_location=device)['model'])
-        print('loaded model.pt, skipping training')
     else:
         loss_fn = nn.CrossEntropyLoss()
         opt = torch.optim.Adam(model.parameters(), lr = 1e-3)
