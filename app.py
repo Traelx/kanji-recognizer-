@@ -56,6 +56,8 @@ demo = gr.Interface(
         canvas_size=(400, 400),
         brush=gr.Brush(default_size=16, colors=['#000000'], color_mode='fixed'),
         label='Draw a kanji or hiragana',
+        height = 400,
+        width = 400,
     ),
     outputs=[
         gr.Label(num_top_classes=5, label='Top 5 predictions'),
